@@ -1,0 +1,46 @@
+{
+    "name": "Order food PHP",
+    "version": "1.0",
+    "description": "Help !",
+    "permissions": [
+        "storage", "tabs"
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "host_permissions": [
+        "https://shopeefood.vn/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://shopeefood.vn/*"],
+            "css": ["css/style.css"],
+            "js": ["js/jquery.min.js","contentScript.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/*"
+            ],
+            "matches": [
+                "https://shopeefood.vn/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/order-food16x16.png",
+        "48": "images/order-food48x48.png",
+        "128": "images/order-food128x128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/order-food16x16.png",
+            "24": "images/order-food48x48.png",
+            "32": "images/order-food128x128.png"
+        },
+        "default_title": "Order food \nFor PHP team",
+        "default_popup" : "popup.html"
+    },
+    "manifest_version": 3
+}

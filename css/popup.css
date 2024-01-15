@@ -1,0 +1,85 @@
+html {
+    background-color: #f7f7f7;
+    font-size: 1.125rem;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#img-hiragana, #img-katakana {
+    width: 320px;
+    display:none;
+}
+
+.wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header {
+    text-align: center;
+    text-wrap: nowrap;
+    margin: 0px 180px;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.p-footer {
+    position: relative;
+    width: 100px;
+    bottom: 0;
+    float: right;
+    background-color: #1F1F1F;
+    color: #FEFDFB;
+    margin-top: 0.625rem;
+}
+
+.p-footer_thanks {
+    position: relative;
+    background-color: #1C1C1C;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: .3rem;
+}
+
+.p-footer_thanks_text {
+    font-size: .4rem;
+    font-family: "coign";
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: .74;
+    margin-bottom: -.015em;
+}
+
+.header-text {
+    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #141414;
+    font-size: 1.125rem;
+    line-height: 120%;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 1280px) {
+    #container {
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+}
+
+img {
+    vertical-align: bottom;
+    border-style: none;
+}
